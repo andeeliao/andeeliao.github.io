@@ -1,46 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
 
-
-<!doctype html>
-
-<!-- comments look like this -->
-
-
-<html>
 <head>
 
-	
-  <title>
-    Cool Website Title
-  </title>
-  <link type="text/css" rel="stylesheet" href="style.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Brizi Analytics</a>
+                </div>
+                
+                <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav side-nav">
+                        <li class="active">
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-dashboard"></i> Dashboard <i class="fa fa-fw fa-caret-down"></i></a>
+                            <ul id="demo" class="collapse">
+                                <li>
+                                    <a href="index.html">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dropdown Item</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                        </li>
+                        <li>
+                            <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                        </li>
+                        <li>
+                            <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                        </li>
+                        <li>
+                            <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                            <ul id="demo" class="collapse">
+                                <li>
+                                    <a href="#">Dropdown Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dropdown Item</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                        </li>
+                        <li>
+                            <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+
+            <div id="page-wrapper">
+
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">
+                                Brizi <small>Statistics Overview</small>
+                            </h1>
+                            <ol class="breadcrumb">
+                                <li class="active">
+                                    <i class="fa fa-dashboard"></i> Dashboard
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i>Shares over time</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="flot-chart">
+                                        <iframe width="1030" height="373.7458333333334" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1r5CzFhR9OZ45KRSzLA8d9-3mkRDfIR4EjQKHpa-a7xc/pubchart?oid=295974658&amp;format=interactive"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="panel panel-yellow">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Shares breakdown by channel</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="flot-chart">
+                                        <div id="content">
+                                            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1r5CzFhR9OZ45KRSzLA8d9-3mkRDfIR4EjQKHpa-a7xc/pubchart?oid=733789994&amp;format=interactive"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="panel panel-green">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Source</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="flot-chart">
+                                        <iframe width="291.49876237623766" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1r5CzFhR9OZ45KRSzLA8d9-3mkRDfIR4EjQKHpa-a7xc/pubchart?oid=736998166&amp;format=interactive"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
 
-</head>
-<body>
-<header> <!-- stuff that never changes (site name, navigation) -->
-  
-  <div id="navbar"> <!-- navigation section -->
-    <h1>Andee Liao</h1>
-  </div>
-</header>
 
-<main> <!-- stuff that changes on every page -->
-  Helloooooo this Andee <br>
-<span><a href="Andee Liao Resume 2014.pdf">Resume</a></span> <br>
-	<img src="http://media-cache-ec0.pinimg.com/736x/dc/ef/3a/dcef3abedf0e0761203aaeb85886a6f3.jpg"/ 
-	height="42" width="42"> <br>
-	<img src="pal pic.jpg"/
-	height="50" width="42">
-	<ul>
-	<li>one thing</li>
-	<li>that thing</li>
-	<li>this other thing<li>
-</ul>
-  <p>I like cookies</p>
-  <p>And fruits.</p>
-</main>
+                    <!-- /.row -->  
 
-<footer>
-</footer>
-</body>
-</html>
+
+                    <div class="row">
+
+                        <div class="col-lg-4">
+                            <div class="panel panel-green">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Operating System</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="flot-chart">
+                                        <iframe width="288.5" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1r5CzFhR9OZ45KRSzLA8d9-3mkRDfIR4EjQKHpa-a7xc/pubchart?oid=344504737&amp;format=interactive"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-lg-8">
+                            <div class="panel panel-yellow">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Sharing Summary</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="flot-chart">
+                                        <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1r5CzFhR9OZ45KRSzLA8d9-3mkRDfIR4EjQKHpa-a7xc/pubchart?oid=1958108830&amp;format=interactive"></iframe>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- /#page-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Morris Charts JavaScript -->
+        <script src="js/plugins/morris/raphael.min.js"></script>
+        <script src="js/plugins/morris/morris.min.js"></script>
+        <script src="js/plugins/morris/morris-data.js"></script>
+
+    </body>
+
+    </html>
