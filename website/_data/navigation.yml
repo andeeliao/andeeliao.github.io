@@ -1,0 +1,15 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Clubs"
+    url: /clubs
+  - title: "About Us"
+    url: /about
+  - title: "Camp"
+    url: /camp
+  - title: "Adult"
+    url: /adult
+  - title: "Kids"
+    url: /kids
+  - title: "Privates"
+    url: /privates

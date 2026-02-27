@@ -1,0 +1,39 @@
+{% if include.id %}
+  {% assign feature_row_custom = page[include.id] %}
+{% else %}
+  {% assign feature_row_custom = page.feature_row_custom %}
+{% endif %}
+
+<div class="{{ include.class }} center_horizontal"> 
+
+  {% for f in feature_row_custom %}
+    <div class="feature__item__left center_horizontal">
+      <div class="archive__item__left">
+
+        <div class="archive__item-body archive__item__left-body">
+          {% if f.title %}
+            <h1 class="archive__item-title archive__item__left-title ">{{ f.title }}</h1>
+          {% endif %}
+
+          {% if f.subtitle %}
+            <div class="archive__item-excerpt offering__locations" style="color: #6C6C6C;">{{ f.subtitle }}</div>
+          {% endif %}
+
+          {% if f.excerpt %}
+            <div class="archive__item-excerpt">
+              {{ f.excerpt | markdownify }}
+            </div>
+          {% endif %}
+
+          {% if f.url %}
+            <a href="{{ f.url | relative_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+          {% endif %}
+        </div>
+      </div>
+      <hr>
+    </div>
+  {% endfor %}
+
+</div>
+
+
