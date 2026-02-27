@@ -17,7 +17,7 @@ feature_row_values:
 permalink: /about
 ---
 
-{% include feature_row_vertical id="feature_row_mission" type="left" %}
+{% include feature_row_vertical.html id="feature_row_mission" type="left" %}
 
 
 <h1 style="text-align: center; margin-bottom: 30px;">Our Values</h1>
