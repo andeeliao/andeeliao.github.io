@@ -1,2 +1,0 @@
-# rackethub
-phil's website
